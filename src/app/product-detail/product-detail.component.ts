@@ -23,4 +23,8 @@ export class ProductDetailComponent implements OnInit {
   goBack() {
     this.router.navigate(['/products']);
   }
+
+  viewReviews() {
+    this.router.navigate(['reviews'], { relativeTo: this.route });
+  }
 }
